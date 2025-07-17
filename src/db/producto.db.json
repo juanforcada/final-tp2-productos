@@ -1,0 +1,32 @@
+[
+  {
+    "fechaIngreso": "2025-07-16",
+    "id": "484c77ee-e3c5-40a3-af34-0d0e3efc444f",
+    "producto": "Remera negra",
+    "stockAmount": 35
+  },
+  {
+    "fechaIngreso": "2025-07-16",
+    "id": "c5bf1b4d-27cb-424e-bffb-b43b0db00120",
+    "producto": "Remera blanca",
+    "stockAmount": 10
+  },
+  {
+    "fechaIngreso": "2025-07-16",
+    "id": "2270103e-68ca-45df-8299-27d6653171c7",
+    "producto": "Remera azul",
+    "stockAmount": 10
+  },
+  {
+    "fechaIngreso": "2025-07-16",
+    "id": "89ff2cd5-2fd8-4d1b-9fc6-700e89e573ae",
+    "producto": "Remera gris",
+    "stockAmount": 10
+  },
+  {
+    "fechaIngreso": "2025-07-16",
+    "id": "31fec2b5-4261-4674-8244-5ca8733ecc79",
+    "producto": "Remera violeta",
+    "stockAmount": 10
+  }
+]

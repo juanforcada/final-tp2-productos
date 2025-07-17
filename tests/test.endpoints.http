@@ -1,0 +1,67 @@
+### Crear producto
+POST http://localhost:3000/api/v1/productos
+Content-Type: application/json
+
+{
+  "producto": "Remera Rosa",
+  "stockAmount": 10
+}
+
+### Crear producto con error de validación (producto vacío)
+POST http://localhost:3000/api/v1/productos
+Content-Type: application/json
+
+{
+  "producto": "",
+  "stockAmount": 5
+}
+
+### Crear producto con error de validación (stockAmount negativo)
+POST http://localhost:3000/api/v1/productos
+Content-Type: application/json
+
+{
+  "producto": "Pantalón azul",
+  "stockAmount": -1
+}
+
+
+
+### Listar productos
+GET http://localhost:3000/api/v1/productos
+
+
+
+### Obtener producto por ID
+GET http://localhost:3000/api/v1/productos/484c77ee-e3c5-40a3-af34-0d0e3efc444f
+
+### Obtener producto por ID inexistente
+GET http://localhost:3000/api/v1/productos/123456
+
+
+
+### Incrementar stock
+PUT http://localhost:3000/api/v1/productos/484c77ee-e3c5-40a3-af34-0d0e3efc444f/updateStock
+Content-Type: application/json
+x-api-key: soy-una-api-key
+
+{
+  "increment": 5
+}
+
+### Incrementar stock con error de autenticación (sin API Key)
+PUT http://localhost:3000/api/v1/productos/484c77ee-e3c5-40a3-af34-0d0e3efc444f/updateStock
+Content-Type: application/json
+
+{
+  "increment": 5
+}
+
+### Incrementar stock con API Key errónea
+PUT http://localhost:3000/api/v1/productos/484c77ee-e3c5-40a3-af34-0d0e3efc444f/updateStock
+Content-Type: application/json
+x-api-key: clave-incorrecta
+
+{
+  "increment": 5
+}
